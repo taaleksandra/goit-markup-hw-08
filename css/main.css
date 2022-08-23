@@ -1088,6 +1088,20 @@
     padding: 49px 24px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .project-list {
+    padding-top: 50px;
+    flex-wrap: wrap;
+  }
+  .project-list__description {
+    overflow: hidden;
+    padding: 49px 45px 49px 24px;
+  }
+  .project-list__photo {
+    width: 370px;
+    max-width: none;
+  }
+}
 .reset-padding-bottom {
   padding-bottom: 0;
 }
