@@ -1,0 +1,233 @@
+// -------------------
+// ----- MOBILE ------
+.filtr-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    &__btn {
+        background-color: $backgroundLightColor;
+        color: $mainColor;
+        border: none;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.625;
+        padding: 6px 22px;
+        border-radius: 4px;
+        transition-property: background-color color box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+            background-color: $accentColor;
+            color: $whiteColor;
+            cursor: pointer;
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
+
+        &:focus {
+            background-color: $accentColor;
+            color: $whiteColor;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .project-list__photo {
+        width: calc(100vw - 30px);
+        max-width: 450px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .project-list__item {
+        margin-bottom: 30px;
+    }
+}
+.project-list {
+    padding-top: 40px;
+
+    &__item {
+        font-size: 0;
+        transition-property: box-shadow;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+            cursor: pointer;
+        }
+    }
+
+    &__container {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__description {
+        position: absolute;
+        overflow: scroll;
+        top: 0px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(33, 150, 243, 0.9);
+        color: $whiteColor;
+        font-size: 18px;
+        line-height: 1.555;
+        letter-spacing: 0.03em;
+        padding: 77px 24px;
+        transform: translateY(400px);
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__item:hover &__description {
+        transform: translateY(0);
+    }
+
+    &__project-title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        vertical-align: top;
+        padding-left: 24px;
+        padding-top: 20px;
+        padding-bottom: 4px;
+        letter-spacing: 0.06em;
+
+        &-container {
+            border-bottom: 1px solid #eeeeee;
+            border-right: 1px solid #eeeeee;
+            border-left: 1px solid #eeeeee;
+        }
+    }
+
+    &__project-describe {
+        font-size: 16px;
+        color: $descriptionColor;
+        line-height: 1.875;
+        padding-left: 24px;
+        padding-bottom: 20px;
+        letter-spacing: 0.06em;
+    }
+}
+
+
+// -------------------
+// ----- TABLET ------
+@media screen and (min-width:768px) {
+    .filtr-buttons-container {
+        justify-content: center;
+    }
+    .project-list__photo {
+        width: calc((100vw - 15px - 30px - 15px) / 2);
+        max-width: 529px;
+    }
+    .project-list__description {
+        padding: 49px 24px;
+    }
+}
+
+// -------------------
+// ----- DESKTOP -----
+@media screen and (min-width: 1200px) {}
+
+// -------------------------------------
+// .filtr-buttons-container {
+//     display: flex;
+//     justify-content: center;
+//     gap: 8px;
+
+//     &__btn {
+//         background-color: $backgroundLightColor;
+//         color: $mainColor;
+//         border: none;
+//         font-weight: 500;
+//         font-size: 16px;
+//         line-height: 1.625;
+//         padding: 6px 22px;
+//         border-radius: 4px;
+//         transition-property: background-color color box-shadow;
+//         transition-duration: 250ms;
+//         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//         &:hover {
+//             background-color: $accentColor;
+//             color: $whiteColor;
+//             cursor: pointer;
+//             box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+//         }
+
+//         &:focus {
+//             background-color: $accentColor;
+//             color: $whiteColor;
+//         }
+//     }
+// }
+
+// .project-list {
+//     padding-top: 50px;
+//     flex-wrap: wrap;
+
+//     &__item {
+//         font-size: 0;
+//         transition-property: box-shadow;
+//         transition-duration: 250ms;
+//         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//         &:hover {
+//             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+//             cursor: pointer;
+//         }
+//     }
+
+//     &__container {
+//         position: relative;
+//         overflow: hidden;
+//     }
+
+//     &__description {
+//         position: absolute;
+//         top: 0px;
+//         bottom: 0;
+//         right: 0;
+//         left: 0;
+//         background-color: rgba(33, 150, 243, 0.9);
+//         color: $whiteColor;
+//         font-size: 18px;
+//         line-height: 1.555;
+//         letter-spacing: 0.03em;
+//         padding: 49px 45px 49px 24px;
+//         transform: translateY(294px);
+//         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     }
+
+//     &__item:hover &__description {
+//         transform: translateY(0);
+//     }
+
+//     &__project-title {
+//         font-weight: 700;
+//         font-size: 18px;
+//         line-height: 2;
+//         vertical-align: top;
+//         letter-spacing: 1.5px;
+//         padding-left: 24px;
+//         padding-top: 20px;
+//         padding-bottom: 4px;
+
+//         &-container {
+//             border-bottom: 1px solid #eeeeee;
+//             border-right: 1px solid #eeeeee;
+//             border-left: 1px solid #eeeeee;
+//         }
+//     }
+
+//     &__project-describe {
+//         font-size: 16px;
+//         color: $descriptionColor;
+//         line-height: 1.875;
+//         letter-spacing: 0.75px;
+//         padding-left: 24px;
+//         padding-bottom: 20px;
+//     }
+// }

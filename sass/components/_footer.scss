@@ -1,0 +1,201 @@
+// -------------------
+// ----- MOBILE ------
+.footer-wrapper {
+    background-color: $backgroundDarkColor;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.address-footer {
+    color: $whiteColor;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    vertical-align: top;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    &--margin {
+        margin-top: 20px;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: #ffffff99;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        padding-top: 8px;
+    }
+}
+
+.footer-column {
+    &__title {
+        font-family: Roboto;
+        font-weight: 700;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 1.1428;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        text-align: center;
+        color: $whiteColor;
+        display: block;
+        padding-bottom: 20px;
+        padding-top: 60px;
+    }
+
+    &__list {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+
+        &--icons-gap {
+            gap: 10px;
+        }
+    }
+
+    &__social-icons {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: rgba(255, 255, 255, 0.1);
+        fill: $whiteColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__form-input {
+        height: 50px;
+        width: calc(100vw - 15px - 15px);
+        max-width: 450px;
+        padding: 15px 16px;
+        background-color: $backgroundDarkColor;
+        border-radius: 4px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        color: $whiteColor;
+
+        &::placeholder {
+            font-size: 16px;
+            line-height: 1.25;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+
+    &__form-btn {
+        margin-top: 20px;
+        padding: 10px 28px 10px 42px;
+        background-color: $accentColor;
+        border: none;
+        border-radius: 4px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.875;
+        color: $whiteColor;
+        letter-spacing: 0.06em;
+        display: flex;
+        align-items: center;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+
+        &:active {
+            box-shadow: $activeBtnShadow;
+        }
+    }
+
+    &__form-btn-icon {
+        margin-left: 24px;
+        fill: $whiteColor;
+    }
+}
+
+@media screen and (max-width: 1119px) {
+    .footer-column__form-btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+// -------------------
+// ----- TABLET ------
+@media screen and (min-width:768px) {
+    .footer-columns-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer-column {
+        width: calc((100vw - 30px) /2 );
+        max-width: 529px;
+
+        &__title--tablet-padding {
+            padding-top: 10px;
+        }
+
+        &__social-icons {
+            &:hover,
+            &:active {
+            cursor: pointer;
+            background-color: $accentColor;
+            }
+        }
+    }
+    .footer-column__list-form {
+        display: block;
+    }
+}
+
+// -------------------
+// ----- DESKTOP -----
+@media screen and (min-width: 1200px) {
+    .footer-columns-items {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .address-footer {
+        text-align: left;
+
+        &__link {
+            padding-top: 9px;
+
+            &:hover,
+            &:focus {
+                color: $accentColor;
+            }
+        }
+    }
+
+    .footer-column {
+        margin-right: 70px;
+        width: auto;
+
+        &__title {
+            padding-top: 12px;
+        }
+
+        &__list {
+            justify-content: flex-start;
+        }
+
+        &__list-form {
+            display: flex;
+        }
+
+        &__form-input {
+            width: 358px;
+            margin-right: 12px;
+        }
+
+        &__form-btn {
+            margin-top: 48px;
+        }
+    }
+}

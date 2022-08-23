@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// ------------------
+// ----- MOBILE -----
+.body {
+    font-family: "Roboto", "Raleway", sans-serif;
+    color: $mainColor;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &__caption {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.179;
+        letter-spacing: 0.03em;
+        text-align: center;
+        vertical-align: top;
+        padding-bottom: 30px;
+    }
+}
+
+.section {
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.list {
+    list-style: none;
+    font-size: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .mobile-list {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+}
+
+// -------------------
+// ----- TABLET ------
+@media screen and (min-width:768px) {
+    .body {        
+        max-width: 1119px;
+    }
+
+    .container {
+        width: 100vw;
+        max-width: 1119px;
+    }
+
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
+// -------------------
+// ----- DESKTOP -----
+@media screen and (min-width: 1200px) {
+    .body {
+        max-width: 1600px;
+
+        &--shadow {
+            box-shadow: 0px 0px 7px -2px rgb(172, 172, 175);
+        }
+    }
+    .container {
+        width: 100vw;
+        max-width: 1200px;
+
+        &__caption {
+            font-size: 36px;
+            line-height: 1.167;
+            padding-bottom: 50px;
+        }
+    }
+    .section {
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
+}

@@ -1,0 +1,102 @@
+// ------------------
+// ----- MOBILE -----
+@media screen and (max-width: 767px){
+    .site-bar {
+        display: none;
+    }
+}
+
+// -------------------
+// ----- TABLET ------
+@media screen and (min-width:768px) {
+    .site-bar-wrapper {
+        background-color: $whiteColor;
+        border-bottom: 1px solid #ececec;
+    }
+    
+    .site-bar {
+        display: flex;
+        align-items: center;
+    }
+
+    .main-navigation {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    
+        &__link {
+            text-decoration: none;
+            color: $mainColor;
+            font-weight: 500;
+            font-size: 14px;
+            letter-spacing: 0.02em;
+            margin-right: 60px;
+            position: relative;
+            transition-property: color fill;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+            &:hover,
+            &:focus {
+                color: $accentColor;
+                fill: $accentColor;
+            }
+    
+            &--active::after {
+                content: "";
+                background-color: $accentColor;
+                border-radius: 2px;
+                height: 4px;
+                position: absolute;
+                top: 45px;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                
+            }
+    
+            &--contact {
+                color: $descriptionColor;
+                margin-right: 50px;
+                fill: $descriptionColor;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+            }
+    
+            &[href="kontakt.html"],
+            &[href="mailto:info@devstudio.com"], 
+            &[href="tel:+48111111111"] {
+                margin-right: 0;
+            }
+
+            &[href="mailto:info@devstudio.com"] {
+                padding-bottom: 10px;
+            }
+        }
+    
+        &--contact {
+            margin-left: auto;
+            display: block;
+        } 
+    } 
+}
+
+// -------------------
+// ----- DESKTOP -----
+@media screen and (min-width: 1200px) {
+    .main-navigation {
+        &__link {
+            margin-right: 46px;
+
+            &[href="mailto:info@devstudio.com"] {
+                padding-bottom: 0;
+                margin-right: 50px;
+            }
+        }
+
+        &--contact {
+            display: flex;
+        }
+    }
+}

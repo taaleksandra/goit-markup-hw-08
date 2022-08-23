@@ -1,0 +1,99 @@
+// -------------------
+// ----- MOBILE ------
+@media screen and (max-width: 767px) {
+    .container-team__worker-photo {
+        width: calc(100vw - 30px);
+        max-width: 450px;
+    }
+}
+
+.container-team {
+    background-color: $backgroundLightColor;
+
+    &__worker-container {
+        background-color: $whiteColor;
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius: 4px;
+        box-shadow: $mobileWrkContainerShadow;
+        margin-bottom: 30px;
+    }
+    
+    &__text {
+        font-size: 16px;
+        line-height: 1.1875;
+        text-align: center;
+        letter-spacing: 0.03em;
+    
+        &--title {
+            font-weight: 500;
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
+    
+        &--describe {
+            color: $descriptionColor;
+            padding-bottom: 16px;
+        }
+    }
+
+    &__icons-containter {
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        padding-bottom: 24px;
+    }
+    
+    &__icon {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        fill: hsla(227, 6%, 70%, 1);
+    }
+}
+
+// -------------------
+// ----- TABLET ------
+@media screen and (min-width:768px) {
+    .container-team {
+        &__worker-container {
+            margin-bottom: 0;
+        }
+
+        &__worker-photo {
+            width: calc((100vw - 15px - 30px - 15px) / 2);
+            max-width: 529px;
+        }
+
+        &__icon {
+            transition-property: background-color fill;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            
+            &:hover,
+            &:active {
+                background-color: $accentColor;
+                fill: hsla(0, 0%, 100%, 1);
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+// -------------------
+// ----- DESKTOP -----
+@media screen and (min-width: 1200px) {
+    .container-team__worker-photo {
+        width: 270px;
+        height: 260px;
+    }
+    .container-team {
+        &__icons-containter {
+            padding-bottom: 30px;
+        }
+    }
+}

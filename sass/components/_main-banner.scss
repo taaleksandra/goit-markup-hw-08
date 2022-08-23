@@ -1,0 +1,93 @@
+// -------------------
+// ----- MOBILE ------
+.main-banner {
+    background-color: $backgroundDarkColor;
+    background-image: linear-gradient(hsla(235, 10%, 21%, 0.4), hsla(235, 10%, 21%, 0.4)), url(../images/main-banner-mobile.jpg);
+    @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .main-banner {
+            background-image: url(../images/main-banner-mobile@2x.jpg);
+        }
+    }
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 118px;
+    padding-bottom: 118px;
+
+    &__caption {
+        color: $whiteColor;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.615;
+        text-align: center;
+        letter-spacing: 0.06em;
+        padding-bottom: 30px;
+    }
+
+    &__button {
+        background-color: $accentColor;
+        color: $whiteColor;
+        border: none;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.875;
+        letter-spacing: 0.06em;
+        text-align: center;
+        cursor: pointer;
+        padding: 10px 42px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        
+        &:active {
+            box-shadow: $activeBtnShadow;
+        }
+    }
+}
+
+// -------------------
+// ----- TABLET ------
+@media screen and (min-width:768px) {
+    .main-banner {
+        background-image: linear-gradient(hsla(235, 10%, 21%, 0.4), hsla(235, 10%, 21%, 0.4)), url(../images/main-banner-tablet.jpg);
+    
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .main-banner {
+                background-image: url(../images/main-banner-tablet@2x.jpg);
+            }
+        }
+    }
+}
+
+// -------------------
+// ----- DESKTOP -----
+@media screen and (min-width: 1200px) {
+    .main-banner {
+        background-image: linear-gradient(hsla(235, 10%, 21%, 0.4), hsla(235, 10%, 21%, 0.4)), url(../images/main-banner-desctop.jpg);
+    
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .main-banner {
+                background-image: url(../images/main-banner-desctop@2x.jpg);
+            }  
+        }
+
+        padding-top: 200px;
+        padding-bottom: 200px;
+
+        &__caption {
+            font-size: 44px;
+            line-height: 1.36;
+        }
+    }
+}

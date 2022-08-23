@@ -1,0 +1,51 @@
+// -------------------
+// ----- MOBILE ------
+.logo {
+    text-decoration: none;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.167;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+
+    &--first {
+        color: $accentColor;
+        }
+    
+    &--second-header {
+        color: $blackColor;
+    }
+    
+    &--second-footer {
+        color: $whiteColor;
+    }
+}
+
+@media screen and (max-width: 1119px) {
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+// -------------------
+// ----- TABLET ------
+@media screen and (min-width:768px){
+    .logo--margin {
+        margin: 26px 83px 26px 0;
+    }
+}
+
+// -------------------
+// ----- DESKTOP -----
+@media screen and (min-width: 1200px) {
+    .logo {
+        font-size: 26px;
+
+        &--margin {
+            margin: 24px 93px 25px 0;
+        }
+    }
+}

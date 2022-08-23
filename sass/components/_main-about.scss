@@ -1,0 +1,58 @@
+// -------------------
+// ----- MOBILE ------
+.about-container {
+    display: flex;
+    max-width: 450px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(250, 38%, 97%, 1);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.about-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding-bottom: 10px;
+}
+
+.about-description {    
+    font-size: 14px;
+    line-height: 1.7;
+    color: $descriptionColor;
+    letter-spacing: 0.03em;
+    padding-bottom: 30px;
+}
+
+// -------------------
+// ----- TABLET ------
+@media screen and (min-width:768px) {
+    .about-container {
+        width: calc((100vw - 15px - 30px - 15px) / 2);
+        max-width: 529px;
+    }
+    .about-title {
+        text-align: left;
+    }
+    .about-description {
+        width: calc((100vw - 15px - 30px - 15px) / 2);
+        max-width: 529px;
+        padding-bottom: 0;
+    }
+}
+
+// -------------------
+// ----- DESKTOP -----
+@media screen and (min-width: 1200px) {
+    .about-container {
+        width: 270px;
+    }
+    .about-description {
+        width: 270px;
+    }
+}
