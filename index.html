@@ -153,6 +153,7 @@
           <li class="container-work__item">
             <img
               src="images/keyboard.jpg"
+              srcset="images/keyboard@2x.jpg 2x"
               alt="Coding"
               width="370"
               height="294"
@@ -165,6 +166,7 @@
           <li class="container-work__item">
             <img
               src="images/laptop.jpg"
+              srcset="images/laptop@2x.jpg 2x"
               alt="Web desing"
               width="370"
               height="294"
@@ -177,6 +179,7 @@
           <li class="container-work__item">
             <img
               src="images/tablet.jpg"
+              srcset="images/tablet@2x.jpg 2x"
               alt="Colours palette on tablet"
               width="370"
               height="294"
@@ -194,17 +197,15 @@
           <ul class="list">
             <li>
               <figure class="container-team__worker-container">
-                <img
-                  class="container-team__worker-photo"
-                  alt="Product designer"
-                  src="images/product-designer.jpg"
-                  srcset="images/product-designer-mobile.jpg 450w, 
-                  images/product-designer-mobile@2x.jpg 2x, 
-                  images/product-designer-tablet.jpg 529w, 
-                  images/product-designer-tablet@2x.jpg 2x, 
-                  images/product-designer.jpg 1200w"
-                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 529px, 450px"
-                />
+                <picture>
+                  <source srcset="images/product-designer.jpg" media="(min-width: 1200px)"/>
+                  <source srcset="images/product-designer@2x.jpg 2x" media="(min-width: 1200px)"/>
+                  <source srcset="images/product-designer-tablet.jpg" media="(min-width: 768px)"/>
+                  <source srcset="images/product-designer-tablet@2x.jpg 2x" media="(min-width: 768px)"/>
+                  <source srcset="images/product-designer-mobile.jpg" media="(max-width: 767px)"/>
+                  <source srcset="images/product-designer-mobile@2x.jpg 2x" media="(max-width: 767px)"/>
+                  <img class="container-team__worker-photo" src="images/product-designer.jpg" alt="Product designer" />
+                </picture>
                 <figcaption class="container-team__text">
                   <h4 class="container-team__text--title">John Doe</h4>
                   <p class="container-team__text--describe">Product Designer</p>
@@ -237,17 +238,16 @@
             </li>
             <li>
               <figure class="container-team__worker-container">
-                <img
-                  class="container-team__worker-photo"
-                  alt="frontend-developer"
-                  src="images/frontend-developer.jpg"
-                  srcset="images/frontend-developer-mobile.jpg 450w, 
-                  images/frontend-developer-mobile@2x.jpg 2x, 
-                  images/frontend-developer-tablet.jpg 529w, 
-                  images/frontend-developer-tablet@2x.jpg 2x, 
-                  images/frontend-developer.jpg 1200w"
-                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 529px, 450px"
-                />
+                <picture>
+                  <source srcset="images/frontend-developer.jpg" media="(min-width: 1200px)" />
+                  <source srcset="images/frontend-developer@2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="images/frontend-developer-tablet.jpg" media="(min-width: 768px)" />
+                  <source srcset="images/frontend-developer-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="images/frontend-developer-mobile.jpg" media="(max-width: 767px)" />
+                  <source srcset="images/frontend-developer-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                  <img class="container-team__worker-photo" src="images/frontend-developer.jpg" alt="frontend-developer"/>
+                </picture>
+
                 <figcaption class="container-team__text">
                   <h4 class="container-team__text--title">John Doe</h4>
                   <p class="container-team__text--describe">Frontend Developer</p>
@@ -280,15 +280,16 @@
             </li>
             <li>
               <figure class="container-team__worker-container">
-                <img
-                  class="container-team__worker-photo"
-                  alt="Marketing worker"
-                  src="images/marketing.jpg"
-                  srcset="images/marketing-mobile.jpg 450w, 
-                  images/marketing-mobile@2x.jpg 2x, 
-                  images/marketing.jpg 1200w"
-                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"
-                />
+                <picture>
+                  <source srcset="images/marketing.jpg" media="(min-width: 1200px)" />
+                  <source srcset="images/marketing@2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="images/marketing-tablet.jpg" media="(min-width: 768px)" />
+                  <source srcset="images/marketing-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="images/marketing-mobile.jpg" media="(max-width: 767px)" />
+                  <source srcset="images/marketing-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                  <img class="container-team__worker-photo" src="images/marketing.jpg" alt="Marketing worker"/>
+                </picture>
+
                 <figcaption class="container-team__text">
                   <h4 class="container-team__text--title">John Doe</h4>
                   <p class="container-team__text--describe">Marketing</p>
@@ -321,15 +322,16 @@
             </li>
             <li>
               <figure class="container-team__worker-container reset-margin-bottom">
-                <img
-                  class="container-team__worker-photo"
-                  alt="UI designer"
-                  src="images/ui-designer.jpg"
-                  srcset="images/ui-designer-mobile.jpg 450w, 
-                  images/ui-designer-mobile@2x.jpg 2x, 
-                  images/ui-designer.jpg 1200w"
-                  sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, 450px"
-                />
+                <picture>
+                  <source srcset="images/ui-designer.jpg" media="(min-width: 1200px)" />
+                  <source srcset="images/ui-designer@2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="images/ui-designer-tablet.jpg" media="(min-width: 768px)" />
+                  <source srcset="images/ui-designer-tablet@2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="images/ui-designer-mobile.jpg" media="(max-width: 767px)" />
+                  <source srcset="images/ui-designer-mobile@2x.jpg 2x" media="(max-width: 767px)" />
+                  <img class="container-team__worker-photo" src="images/ui-designer.jpg" alt="UI designer"/>
+                </picture>
+
                 <figcaption class="container-team__text">
                   <h4 class="container-team__text--title">John Doe</h4>
                   <p class="container-team__text--describe">UI Designer</p>
