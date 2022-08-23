@@ -494,6 +494,12 @@
     background-size: 30vw;
   }
 }
+@media screen and (min-width: 1200px) {
+  .in-progress {
+    height: calc(100vh - 80px - 241px);
+    background-size: 20vw;
+  }
+}
 .main-banner {
   background-color: #2f303a;
   background-image: linear-gradient(hsla(235deg, 10%, 21%, 0.4), hsla(235deg, 10%, 21%, 0.4)), url(../images/main-banner-mobile.jpg);
@@ -954,6 +960,22 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3) inset;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal__form-input {
+    width: 100%;
+    max-width: none;
+  }
+  .modal__form-txt-area {
+    width: 448px;
+    max-width: none;
+  }
+  .checkbox__label::before {
+    margin-left: 14px;
+  }
+  .checkbox__info {
+    font-size: 14px;
+  }
+}
 .filtr-buttons-container {
   display: flex;
   flex-wrap: wrap;

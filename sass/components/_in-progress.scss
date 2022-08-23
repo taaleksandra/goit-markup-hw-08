@@ -17,10 +17,11 @@
     }
 }
 
-// .in-progress {
-//     height: calc(100vh - 80px - 241px);
-//     background-image: url(../images/work-in-progress.png);
-//     background-repeat: no-repeat;
-//     background-position: 50% 50%;
-//     background-size: 50vw;
-// }
+// -------------------
+// ----- DESKTOP -----
+@media screen and (min-width: 1200px) {
+    .in-progress {
+        height: calc(100vh - 80px - 241px);
+        background-size: 20vw;
+    }
+}
