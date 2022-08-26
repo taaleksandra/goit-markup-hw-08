@@ -67,6 +67,16 @@
         transition-property: background-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            cursor: pointer;
+            background-color: $accentColor;
+        }
+
+        &:active {
+            box-shadow: $activeBtnShadow;
+        }
     }
 
     &__form-input {
@@ -140,11 +150,7 @@
         }
 
         &__social-icons {
-            &:hover,
-            &:active {
-            cursor: pointer;
-            background-color: $accentColor;
-            }
+
         }
     }
     .footer-column__list-form {

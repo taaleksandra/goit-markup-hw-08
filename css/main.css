@@ -376,6 +376,13 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer-column__social-icons:hover, .footer-column__social-icons:focus {
+  cursor: pointer;
+  background-color: #2196f3;
+}
+.footer-column__social-icons:active {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3) inset;
+}
 .footer-column__form-input {
   height: 50px;
   width: calc(100vw - 15px - 15px);
@@ -436,10 +443,6 @@
   }
   .footer-column__title--tablet-padding {
     padding-top: 10px;
-  }
-  .footer-column__social-icons:hover, .footer-column__social-icons:active {
-    cursor: pointer;
-    background-color: #2196f3;
   }
   .footer-column__list-form {
     display: block;
