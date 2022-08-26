@@ -58,6 +58,7 @@
             background-color: $accentColor;
             fill: hsla(0, 0%, 100%, 1);
             cursor: pointer;
+            outline: none;
         }
                     
         &:active {

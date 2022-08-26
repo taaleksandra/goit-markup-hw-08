@@ -40,6 +40,7 @@
             &:focus {
                 color: $accentColor;
                 fill: $accentColor;
+                outline: none;
             }
     
             &--active::after {

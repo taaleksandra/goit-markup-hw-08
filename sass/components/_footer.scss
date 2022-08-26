@@ -72,6 +72,7 @@
         &:focus {
             cursor: pointer;
             background-color: $accentColor;
+            outline: none;
         }
 
         &:active {
@@ -171,6 +172,7 @@
             &:hover,
             &:focus {
                 color: $accentColor;
+                outline: none;
             }
         }
     }

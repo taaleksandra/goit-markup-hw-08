@@ -56,9 +56,11 @@
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-        &:hover {
+        &:hover,
+        &:focus {
             color: $accentColor;
             box-shadow: $hoverBtnShadow;
+            outline: none;
         }
 
         &:active {
@@ -192,7 +194,8 @@
         padding: 0;
     }
 
-    &:hover &__label::before {
+    &:hover &__label::before,
+    &:focus &__label::before {
         border-color: $accentColor;
     }
 
@@ -216,9 +219,11 @@
         color: $whiteColor;
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-        &:hover {
+        &:hover,
+        &:focus {
             cursor: pointer;
             box-shadow: $hoverBtnShadow;
+            outline: none;
         }
 
         &:active {
