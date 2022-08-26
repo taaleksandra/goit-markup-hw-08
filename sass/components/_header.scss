@@ -8,15 +8,16 @@
 
 // -------------------
 // ----- TABLET ------
-@media screen and (min-width:768px) {
-    .site-bar-wrapper {
-        background-color: $whiteColor;
-        border-bottom: 1px solid #ececec;
-    }
-    
+@media screen and (min-width:768px) { 
     .site-bar {
         display: flex;
         align-items: center;
+
+        &-wrapper {
+            background-color: $whiteColor;
+            border-bottom: 1px solid #ececec;
+        }
+        
     }
 
     .main-navigation {

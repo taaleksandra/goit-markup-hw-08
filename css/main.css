@@ -142,7 +142,7 @@
   outline: none;
   color: #000000;
 }
-.menu-toggle:hover, .menu-toggle:active {
+.menu-toggle:hover, .menu-toggle:focus, .menu-toggle:active {
   color: #2196f3;
   background-color: transparent;
 }
@@ -173,6 +173,7 @@
 }
 
 .menu-container .menu-toggle:hover,
+.menu-container .menu-toggle:focus,
 .menu-container .menu-toggle:active {
   color: #2196f3;
 }
@@ -189,6 +190,9 @@
   line-height: 1.175;
   letter-spacing: 0.02em;
   padding-bottom: 32px;
+}
+.mobile-menu__link--active {
+  color: #2196f3;
 }
 .mobile-menu__link:hover, .mobile-menu__link:focus, .mobile-menu__link:active {
   color: #2196f3;
@@ -208,6 +212,7 @@
 .mobile-menu-contact__link[href="tel:+48111111111"] {
   font-size: 34px;
   line-height: 1.176;
+  color: #2196f3;
 }
 .mobile-menu-contact__link[href="mailto:info@devstudio.com"] {
   display: block;
@@ -243,13 +248,13 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .site-bar-wrapper {
-    background-color: #ffffff;
-    border-bottom: 1px solid #ececec;
-  }
   .site-bar {
     display: flex;
     align-items: center;
+  }
+  .site-bar-wrapper {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ececec;
   }
   .main-navigation {
     list-style: none;
@@ -491,19 +496,19 @@
   background-image: url(../images/work-in-progress.png);
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: 50vw;
+  background-size: 30vh;
 }
 
 @media screen and (min-width: 768px) {
   .in-progress {
     height: calc(100vh - 80px - 450px);
-    background-size: 30vw;
+    background-size: 15vh;
   }
 }
 @media screen and (min-width: 1200px) {
   .in-progress {
     height: calc(100vh - 80px - 241px);
-    background-size: 20vw;
+    background-size: 30vh;
   }
 }
 .main-banner {
@@ -562,14 +567,14 @@
 }
 @media screen and (min-width: 1200px) {
   .main-banner {
-    background-image: linear-gradient(hsla(235deg, 10%, 21%, 0.4), hsla(235deg, 10%, 21%, 0.4)), url(../images/main-banner-desctop.jpg);
+    background-image: linear-gradient(hsla(235deg, 10%, 21%, 0.4), hsla(235deg, 10%, 21%, 0.4)), url(../images/main-banner-desktop.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .main-banner .main-banner {
-    background-image: url(../images/main-banner-desctop@2x.jpg);
+    background-image: url(../images/main-banner-desktop@2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -996,6 +1001,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  row-gap: 15px;
 }
 .filtr-buttons-container__btn {
   background-color: #f5f4fa;

@@ -21,6 +21,7 @@
     color: $blackColor;
 
     &:hover,
+    &:focus,
     &:active {
         color: $accentColor;
         background-color: transparent;
@@ -53,6 +54,7 @@
 }
 
 .menu-container .menu-toggle:hover,
+.menu-container .menu-toggle:focus,
 .menu-container .menu-toggle:active {
     color: $accentColor;
 }
@@ -69,6 +71,10 @@
         line-height: 1.175;
         letter-spacing: 0.02em;
         padding-bottom: 32px;
+
+        &--active {
+            color: $accentColor;
+        }
 
         &:hover,
         &:focus,
@@ -96,6 +102,7 @@
         &__link[href="tel:+48111111111"] {
             font-size: 34px;
             line-height: 1.176;
+            color: $accentColor;
         }
 
         &__link[href="mailto:info@devstudio.com"] {

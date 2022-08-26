@@ -71,14 +71,14 @@
 // ----- DESKTOP -----
 @media screen and (min-width: 1200px) {
     .main-banner {
-        background-image: linear-gradient(hsla(235, 10%, 21%, 0.4), hsla(235, 10%, 21%, 0.4)), url(../images/main-banner-desctop.jpg);
+        background-image: linear-gradient(hsla(235, 10%, 21%, 0.4), hsla(235, 10%, 21%, 0.4)), url(../images/main-banner-desktop.jpg);
     
         @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             .main-banner {
-                background-image: url(../images/main-banner-desctop@2x.jpg);
+                background-image: url(../images/main-banner-desktop@2x.jpg);
             }  
         }
 
