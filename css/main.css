@@ -346,6 +346,10 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   padding-top: 8px;
 }
+.address-footer__link:hover, .address-footer__link:focus {
+  color: #2196f3;
+  outline: none;
+}
 
 .footer-column__title {
   font-family: Roboto;
@@ -465,10 +469,6 @@
   }
   .address-footer__link {
     padding-top: 9px;
-  }
-  .address-footer__link:hover, .address-footer__link:focus {
-    color: #2196f3;
-    outline: none;
   }
   .footer-column {
     margin-right: 70px;
@@ -1010,7 +1010,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
-  padding: 6px 22px;
+  padding: 6px 25px;
   border-radius: 4px;
   transition-property: background-color color box-shadow;
   transition-duration: 250ms;
@@ -1065,7 +1065,7 @@
   line-height: 1.555;
   letter-spacing: 0.03em;
   padding: 77px 24px;
-  transform: translateY(400px);
+  transform: translateY(500px);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-list__item:hover .project-list__description, .project-list__item:focus .project-list__description {

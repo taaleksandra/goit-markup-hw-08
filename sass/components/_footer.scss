@@ -26,6 +26,12 @@
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         padding-top: 8px;
+
+        &:hover,
+        &:focus {
+            color: $accentColor;
+            outline: none;
+        }
     }
 }
 
@@ -168,12 +174,6 @@
 
         &__link {
             padding-top: 9px;
-
-            &:hover,
-            &:focus {
-                color: $accentColor;
-                outline: none;
-            }
         }
     }
 
